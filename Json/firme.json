@@ -1,0 +1,568 @@
+[{
+	"Nume_Companie": "BitDefender",
+	"Domeniu": "IT",
+	"Criterii": {
+		"E": {
+			"Electricity_Generation": {
+				"valoare": 96
+			},
+			"EP_MS": {
+				"valoare": 82
+			},
+			"RC_RE": {
+				"valoare": 26
+			}
+		},
+		"S": {
+			"Human_Rights": {
+				"valoare": 54
+			},
+			"Social_Impact_on_Comunities": {
+				"valoare": 25
+			},
+			"PTSH": {
+				"valoare": 35
+			},
+			"Financiat_Inclusion": {
+				"valoare": 78
+			}
+		},
+		"G": {
+			"Codes_of_Business_Conduct": {
+				"valoare": 99
+			},
+			"Inovation_Management": {
+				"valoare": 90
+			},
+			"Marcket_Opportunities": {
+				"valoare": 29
+			},
+			"Sustainable_Finance": {
+				"valoare": 20
+			},
+			"Efficiency": {
+				"valoare": 12
+			},
+			"Network_Reliability": {
+				"valoare": 71
+			},
+			"Brand_Management": {
+				"valoare": 87
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Microsoft",
+	"Domeniu": "IT",
+	"Criterii": {
+		"E": {
+			"Electricity_Generation": {
+				"valoare": 38
+			},
+			"EP_MS": {
+				"valoare": 43
+			},
+			"RC_RE": {
+				"valoare": 64
+			}
+		},
+		"S": {
+			"Human_Rights": {
+				"valoare": 16
+			},
+			"Social_Impact_on_Comunities": {
+				"valoare": 91
+			},
+			"PTSH": {
+				"valoare": 49
+			},
+			"Financiat_Inclusion": {
+				"valoare": 34
+			}
+		},
+		"G": {
+			"Codes_of_Business_Conduct": {
+				"valoare": 82
+			},
+			"Inovation_Management": {
+				"valoare": 68
+			},
+			"Marcket_Opportunities": {
+				"valoare": 76
+			},
+			"Sustainable_Finance": {
+				"valoare": 95
+			},
+			"Efficiency": {
+				"valoare": 18
+			},
+			"Network_Reliability": {
+				"valoare": 11
+			},
+			"Brand_Management": {
+				"valoare": 55
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Luxoft",
+	"Domeniu": "IT",
+	"Criterii": {
+		"E": {
+			"Electricity_Generation": {
+				"valoare": 75
+			},
+			"EP_MS": {
+				"valoare": 97
+			},
+			"RC_RE": {
+				"valoare": 33
+			}
+		},
+		"S": {
+			"Human_Rights": {
+				"valoare": 68
+			},
+			"Social_Impact_on_Comunities": {
+				"valoare": 44
+			},
+			"PTSH": {
+				"valoare": 19
+			},
+			"Financiat_Inclusion": {
+				"valoare": 51
+			}
+		},
+		"G": {
+			"Codes_of_Business_Conduct": {
+				"valoare": 96
+			},
+			"Inovation_Management": {
+				"valoare": 69
+			},
+			"Marcket_Opportunities": {
+				"valoare": 36
+			},
+			"Sustainable_Finance": {
+				"valoare": 25
+			},
+			"Efficiency": {
+				"valoare": 18
+			},
+			"Network_Reliability": {
+				"valoare": 10
+			},
+			"Brand_Management": {
+				"valoare": 99
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Adobi",
+	"Domeniu": "IT",
+	"Criterii": {
+		"E": {
+			"Electricity_Generation": {
+				"valoare": 38
+			},
+			"EP_MS": {
+				"valoare": 66
+			},
+			"RC_RE": {
+				"valoare": 49
+			}
+		},
+		"S": {
+			"Human_Rights": {
+				"valoare": 83
+			},
+			"Social_Impact_on_Comunities": {
+				"valoare": 31
+			},
+			"PTSH": {
+				"valoare": 13
+			},
+			"Financiat_Inclusion": {
+				"valoare": 43
+			}
+		},
+		"G": {
+			"Codes_of_Business_Conduct": {
+				"valoare": 97
+			},
+			"Inovation_Management": {
+				"valoare": 30
+			},
+			"Marcket_Opportunities": {
+				"valoare": 37
+			},
+			"Sustainable_Finance": {
+				"valoare": 49
+			},
+			"Efficiency": {
+				"valoare": 71
+			},
+			"Network_Reliability": {
+				"valoare": 28
+			},
+			"Brand_Management": {
+				"valoare": 64
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Ubisoft",
+	"Domeniu": "IT",
+	"Criterii": {
+		"E": {
+			"Electricity_Generation": {
+				"valoare": 90
+			},
+			"EP_MS": {
+				"valoare": 31
+			},
+			"RC_RE": {
+				"valoare": 47
+			}
+		},
+		"S": {
+			"Human_Rights": {
+				"valoare": 60
+			},
+			"Social_Impact_on_Comunities": {
+				"valoare": 12
+			},
+			"PTSH": {
+				"valoare": 59
+			},
+			"Financiat_Inclusion": {
+				"valoare": 66
+			}
+		},
+		"G": {
+			"Codes_of_Business_Conduct": {
+				"valoare": 33
+			},
+			"Inovation_Management": {
+				"valoare": 85
+			},
+			"Marcket_Opportunities": {
+				"valoare": 17
+			},
+			"Sustainable_Finance": {
+				"valoare": 46
+			},
+			"Efficiency": {
+				"valoare": 94
+			},
+			"Network_Reliability": {
+				"valoare": 55
+			},
+			"Brand_Management": {
+				"valoare": 80
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Top Home Estate",
+	"Domeniu": "imobiliare",
+	"Criterii": {
+		"E": {
+			"Biodiversity": {
+				"valoare": 46
+			},
+			"Building_Materials": {
+				"valoare": 95
+			},
+			"Climate_Strategy": {
+				"valoare": 37
+			},
+			"Electricity_Generation": {
+				"valoare": 18
+			},
+			"Water_Related_Risks": {
+				"valoare": 71
+			}
+		},
+		"S": {
+			"Responsibility_of_Content": {
+				"valoare": 37
+			}
+		},
+		"G": {
+			"FS_SR": {
+				"valoare": 50
+			},
+			"Marcketing_Practices": {
+				"valoare": 45
+			},
+			"Marcket_Opportunities": {
+				"valoare": 80
+			},
+			"R_C_Management": {
+				"valoare": 18
+			},
+			"Efficiency": {
+				"valoare": 43
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Pro Comfort Imobiliare",
+	"Domeniu": "imobiliare",
+	"Criterii": {
+		"E": {
+			"Biodiversity": {
+				"valoare": 15
+			},
+			"Building_Materials": {
+				"valoare": 54
+			},
+			"Climate_Strategy": {
+				"valoare": 69
+			},
+			"Electricity_Generation": {
+				"valoare": 96
+			},
+			"Water_Related_Risks": {
+				"valoare": 36
+			}
+		},
+		"S": {
+			"Responsibility_of_Content": {
+				"valoare": 77
+			}
+		},
+		"G": {
+			"FS_SR": {
+				"valoare": 20
+			},
+			"Marcketing_Practices": {
+				"valoare": 82
+			},
+			"Marcket_Opportunities": {
+				"valoare": 48
+			},
+			"R_C_Management": {
+				"valoare": 44
+			},
+			"Efficiency": {
+				"valoare": 34
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "ImobExpert",
+	"Domeniu": "imobiliare",
+	"Criterii": {
+		"E": {
+			"Biodiversity": {
+				"valoare": 73
+			},
+			"Building_Materials": {
+				"valoare": 97
+			},
+			"Climate_Strategy": {
+				"valoare": 49
+			},
+			"Electricity_Generation": {
+				"valoare": 24
+			},
+			"Water_Related_Risks": {
+				"valoare": 22
+			}
+		},
+		"S": {
+			"Responsibility_of_Content": {
+				"valoare": 72
+			}
+		},
+		"G": {
+			"FS_SR": {
+				"valoare": 77
+			},
+			"Marcketing_Practices": {
+				"valoare": 67
+			},
+			"Marcket_Opportunities": {
+				"valoare": 46
+			},
+			"R_C_Management": {
+				"valoare": 94
+			},
+			"Efficiency": {
+				"valoare": 89
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "FideliaCasa",
+	"Domeniu": "imobiliare",
+	"Criterii": {
+		"E": {
+			"Biodiversity": {
+				"valoare": 28
+			},
+			"Building_Materials": {
+				"valoare": 72
+			},
+			"Climate_Strategy": {
+				"valoare": 17
+			},
+			"Electricity_Generation": {
+				"valoare": 61
+			},
+			"Water_Related_Risks": {
+				"valoare": 66
+			}
+		},
+		"S": {
+			"Responsibility_of_Content": {
+				"valoare": 46
+			}
+		},
+		"G": {
+			"FS_SR": {
+				"valoare": 94
+			},
+			"Marcketing_Practices": {
+				"valoare": 90
+			},
+			"Marcket_Opportunities": {
+				"valoare": 29
+			},
+			"R_C_Management": {
+				"valoare": 42
+			},
+			"Efficiency": {
+				"valoare": 74
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Cascade Wood Products",
+	"Domeniu": "lemn",
+	"Criterii": {
+		"E": {
+			"Bio": {
+				"valoare": 37
+			},
+			"Land": {
+				"valoare": 53
+			},
+			"Recycling": {
+				"valoare": 10
+			},
+			"SFP": {
+				"valoare": 91
+			},
+			"Climate_Strategy": {
+				"valoare": 49
+			}
+		},
+		"S": {
+			"PTSH": {
+				"valoare": 34
+			},
+			"LIBO": {
+				"valoare": 73
+			}
+		},
+		"G": {
+			"PQ_RM": {
+				"valoare": 87
+			},
+			"R_C_Management": {
+				"valoare": 28
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Highland Pellets",
+	"Domeniu": "lemn",
+	"Criterii": {
+		"E": {
+			"Bio": {
+				"valoare": 52
+			},
+			"Land": {
+				"valoare": 60
+			},
+			"Recycling": {
+				"valoare": 36
+			},
+			"SFP": {
+				"valoare": 43
+			},
+			"Climate_Strategy": {
+				"valoare": 44
+			}
+		},
+		"S": {
+			"PTSH": {
+				"valoare": 24
+			},
+			"LIBO": {
+				"valoare": 82
+			}
+		},
+		"G": {
+			"PQ_RM": {
+				"valoare": 68
+			},
+			"R_C_Management": {
+				"valoare": 76
+			}
+		}
+	}
+},
+{
+	"Nume_Companie": "Groupe Lebel",
+	"Domeniu": "lemn",
+	"Criterii": {
+		"E": {
+			"Bio": {
+				"valoare": 35
+			},
+			"Land": {
+				"valoare": 85
+			},
+			"Recycling": {
+				"valoare": 96
+			},
+			"SFP": {
+				"valoare": 51
+			},
+			"Climate_Strategy": {
+				"valoare": 28
+			}
+		},
+		"S": {
+			"PTSH": {
+				"valoare": 44
+			},
+			"LIBO": {
+				"valoare": 34
+			}
+		},
+		"G": {
+			"PQ_RM": {
+				"valoare": 85
+			},
+			"R_C_Management": {
+				"valoare": 64
+			}
+		}
+	}
+}
+]

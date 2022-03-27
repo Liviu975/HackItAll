@@ -1,0 +1,44 @@
+[{
+	"Domeniu": "imobiliare",
+	"Criterii": {
+		"E": {
+			"Biodiversity": {
+				"pondere": 2
+			},
+			"Building_Materials": {
+				"pondere": 0.5
+			},
+			"Climate_Strategy": {
+				"pondere": 0.9
+			},
+			"Electricity_Generation": {
+				"pondere": 4.1
+			},
+			"Water_Related_Risks": {
+				"pondere": 3.2
+			}
+		},
+		"S": {
+			"Responsibility_of_Content": {
+				"pondere": 2.2
+			}
+		},
+		"G": {
+			"FS_SR": {
+				"pondere": 1.4
+			},
+			"Marcketing_Practices": {
+				"pondere": 4.4
+			},
+		  "Marcket_Opportunities": {
+				"pondere": 3.1
+			},
+		  "R_C_Management": {
+				"pondere": 2.4
+			},
+		  "Efficiency": {
+				"pondere": 1
+			}
+		}
+	}
+}]

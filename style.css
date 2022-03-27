@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body-background{
+    background-color: rgb(223, 223, 226) !important;
+}
+
+.display-none{
+    display: none!important;
+}
+
+.background-primary{
+    background-color: white;
+}
+
+.max-height{
+    max-height: 300px!important;
+}
+
+.little-margin-top{
+    margin-top: 30px !important;
+}
+
+.margin-top{
+    margin-top: 120px!important;
+}
+
+.border-radius{
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.simple-border-radius{
+    border-radius: 5px;
+    border: 0.5px solid grey;
+}
+
+.company_link > h1:hover{
+    cursor: pointer;
+}

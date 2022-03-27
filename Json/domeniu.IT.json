@@ -1,0 +1,53 @@
+[{
+	"Domeniu": "IT",
+	"Criterii": {
+		"E": {
+			"Electricity_Generation": {
+				"pondere": 3.4
+			},
+			"EP_MS": {
+				"pondere": 4.8
+			},
+			"RC_RE": {
+				"pondere": 3.7
+			}
+		},
+		"S": {
+			"Human_Rights": {
+				"pondere": 1.2
+			},
+		  	"Social_Impact_on_Comunities": {
+				"pondere": 1.6
+			},
+		  	"PTSH": {
+				"pondere": 2.3
+			},
+		  	"Financiat_Inclusion": {
+				"pondere": 4.4
+			}
+		},
+		"G": {
+			"Codes_of_Business_Conduct": {
+				"pondere": 3.9
+			},
+			"Inovation_Management": {
+				"pondere": 4.6
+			},
+		  	"Marcket_Opportunities": {
+				"pondere": 2.1
+			},
+		  	"Sustainable_Finance": {
+				"pondere": 2.5
+			},
+		  	"Efficiency": {
+				"pondere": 3.3
+			},
+	  		"Network_Reliability": {
+				"pondere": 4.2
+			},
+		  	"Brand_Management": {
+				"pondere": 1.9
+			}
+		}
+	}
+}]

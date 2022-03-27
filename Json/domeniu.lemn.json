@@ -1,0 +1,38 @@
+[{
+	"Domeniu": "lemn",
+	"Criterii": {
+		"E": {
+			"Bio": {
+				"pondere": 2.5
+			},
+			"Land": {
+				"pondere": 3.5
+			},
+			"Recycling": {
+				"pondere": 1.5
+			},
+			"SFP": {
+				"pondere": 2.7
+			},
+			"Climate_Strategy": {
+				"pondere": 3
+			}
+		},
+		"S": {
+			"PTSH": {
+				"pondere": 2.9
+			},
+			"LIBO": {
+				"pondere": 1.3
+			}
+		},
+		"G": {
+			"PQ_RM": {
+				"pondere": 3.6
+			},
+			"R_C_Management": {
+				"pondere": 3.1
+			}
+		}
+	}
+}]
