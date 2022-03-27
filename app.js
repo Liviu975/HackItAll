@@ -74,14 +74,14 @@ fetch("Json/firme.json")
 
                 const titluCompanie = document.querySelector("#company_name > h3").textContent = `${button.innerText}`;
                 let EdataForChart = [];
-                    let SdataForChart = [];
-                    let GdataForChart = [];
-                    let nr_pondere = 0;
-                    let EdataValue = 0;
-                    let SdataValue = 0;
-                    let GdataValue = 0;
+                let SdataForChart = [];
+                let GdataForChart = [];
+                let nr_pondere = 0;
+                let EdataValue = 0;
+                let SdataValue = 0;
+                let GdataValue = 0;
                 for (let [index, company] of companies.entries()) {
-                    
+
 
                     if (titluCompanie == company.Nume_Companie) {
                         const domain = company.Domeniu;
@@ -140,36 +140,103 @@ fetch("Json/firme.json")
                                 console.table(EdataValue, SdataValue, GdataValue)
 
                                 let someValue = 25;
-                                if(EdataValue+SdataValue+GdataValue%2!=0){
-                                    someValue = 25*2 + EdataValue+SdataValue+GdataValue%2
+                                if (EdataValue + SdataValue + GdataValue % 2 != 0) {
+                                    someValue = 25 * 2 + EdataValue + SdataValue + GdataValue % 2
                                 }
 
-                                const dif = EdataValue+SdataValue+GdataValue - someValue;
-                                const procentage = ((100*dif)/someValue);
+                                const dif = EdataValue + SdataValue + GdataValue - someValue;
+                                const procentage = ((100 * dif) / someValue);
 
-                                if(procentage >= 0){
+                                if (procentage >= 0) {
                                     document.querySelector("#improvement").textContent = `+${procentage.toFixed(2)}`;
-                                    document.querySelector("#improvement").style.color="green";
-                                    if(procentage > 0 && procentage <=2){
+                                    document.querySelector("#improvement").style.color = "green";
+                                    if (procentage > 0 && procentage <= 2) {
                                         document.querySelector("#grade").textContent = "BB"
-                                    } else if(procentage >2){
+                                    } else if (procentage > 2) {
                                         document.querySelector("#grade").textContent = "BBB";
-                                    } else if(procentage == 0){
+                                    } else if (procentage == 0) {
                                         document.querySelector("#grade").textContent = "B";
                                     }
-                                } else if(procentage <0){
+                                } else if (procentage < 0) {
                                     document.querySelector("#improvement").textContent = `${procentage.toFixed(2)}`;
-                                    document.querySelector("#improvement").style.color="red";
+                                    document.querySelector("#improvement").style.color = "red";
                                     document.querySelector("#grade").textContent = "Junk";
                                 }
 
-                                let someValue1 = EdataValue+SdataValue+GdataValue / 5 *3 - Math.round(Math.random()*10); 
+                                let someValue1 = EdataValue + SdataValue + GdataValue / 5 * 3 - Math.round(Math.random() * 10);
 
+                                function linearRegression(inputArray, xLabel, yLabel) {
+                                    const x = inputArray.map((element) => element[xLabel]);
+                                    const y = inputArray.map((element) => element[yLabel]);
+                                    const sumX = x.reduce((prev, curr) => prev + curr, 0);
+                                    const avgX = sumX / x.length;
+                                    const xDifferencesToAverage = x.map((value) => avgX - value);
+                                    const xDifferencesToAverageSquared = xDifferencesToAverage.map(
+                                        (value) => value ** 2
+                                    );
+                                    const SSxx = xDifferencesToAverageSquared.reduce(
+                                        (prev, curr) => prev + curr,
+                                        0
+                                    );
+                                    const sumY = y.reduce((prev, curr) => prev + curr, 0);
+                                    const avgY = sumY / y.length;
+                                    const yDifferencesToAverage = y.map((value) => avgY - value);
+                                    const xAndYDifferencesMultiplied = xDifferencesToAverage.map(
+                                        (curr, index) => curr * yDifferencesToAverage[index]
+                                    );
+                                    const SSxy = xAndYDifferencesMultiplied.reduce(
+                                        (prev, curr) => prev + curr,
+                                        0
+                                    );
+                                    const slope = SSxy / SSxx;
+                                    const intercept = avgY - slope * avgX;
+                                    return (x) => avgX;
+                                }
+                                
+                                    inputArray = [
+                                        {
+                                            "months": 1,
+                                            "ESG": 65
+                                        },
+                                        {
+
+                                            "months": 2,
+                                            "ESG": someValue1,
+                                        },
+                                        {
+
+                                            "months": 3,
+                                            "ESG": 80,
+                                        },
+                                        {
+
+                                            "months": 4,
+                                            "ESG": 81,
+                                        },
+                                        {
+
+                                            "months": 5,
+                                            "ESG": someValue,
+                                        },
+                                        {
+
+                                            "months": 6,
+                                            "ESG": EdataValue + SdataValue + GdataValue,
+                                        }
+                                    ]
+
+
+                                const linReg = linearRegression(inputArray, "ESG", "months");
+
+                                console.log(linReg(7));
+
+
+                                    
                                 let data1 = {
-                                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July-Prediction'],
                                     datasets: [{
                                         label: 'Looping tension',
-                                        data: [65, someValue1, 80, 81, someValue, EdataValue+SdataValue+GdataValue],
+                                        data: [65, someValue1, 80, 81, someValue, EdataValue + SdataValue + GdataValue, linReg(7).toFixed(2)],
                                         fill: true,
                                         borderColor: 'rgb(75, 192, 192)',
                                     }]
@@ -183,7 +250,7 @@ fetch("Json/firme.json")
                                             tension: {
                                                 duration: 1000,
                                                 easing: 'linear',
-                                                from: 0.4,
+                                                from: 0.5,
                                                 to: 0,
                                                 loop: true
                                             }
@@ -191,7 +258,7 @@ fetch("Json/firme.json")
                                         scales: {
                                             y: {
                                                 min: 0,
-                                                max: EdataValue+SdataValue+GdataValue+20
+                                                max: EdataValue + SdataValue + GdataValue + 20
                                             }
                                         }
                                     }
@@ -257,7 +324,7 @@ fetch("Json/firme.json")
                                                 duration: 1000,
                                                 easing: 'linear',
                                                 from: 0.4,
-                                                to: 0.2,
+                                                to: 0.1,
                                                 loop: true
                                             }
                                         },
@@ -273,19 +340,18 @@ fetch("Json/firme.json")
                                 const ctxTripleChart = document.getElementById('tripleChart');
                                 const myTripleChart = new Chart(ctxTripleChart, configTripleChart);
 
-                                document.querySelector("#score").textContent = EdataValue + SdataValue + GdataValue; 
+                                document.querySelector("#score").textContent = EdataValue + SdataValue + GdataValue;
 
-                                 EdataForChart = [];
-                                 SdataForChart = [];
-                                 GdataForChart = [];
-                                 nr_pondere = 0;
-                                 EdataValue = 0;
-                                 SdataValue = 0;
-                                 GdataValue = 0;
+
+
+                                EdataForChart = [];
+                                SdataForChart = [];
+                                GdataForChart = [];
+                                nr_pondere = 0;
+                                EdataValue = 0;
+                                SdataValue = 0;
+                                GdataValue = 0;
                             })
-
-                        //config all charts
-                        //Config object line chart
 
                     }
                 }
