@@ -1,34 +1,5 @@
 
 
-
-// //Fetch criterii din imobiliare
-// let realEstateCriterias;
-// fetch("Json/domeniu.imobiliare.json")
-// .then(response => response.json())
-// .then(data => {
-//     realEstateCriterias = data;
-// })
-// .then(data => console.log(realEstateCriterias))
-
-// //Fetch criterii din IT
-// let itCriterias;
-// fetch("Json/domeniu.IT.json")
-// .then(response => response.json())
-// .then(data => {
-//     itCriterias = data;
-// })
-// .then(data => console.log(itCriterias))
-
-// //Fetch criterii din lemn
-// let lemnCriterias;
-// fetch("Json/domeniu.lemn.json")
-// .then(response => response.json())
-// .then(data => {
-//     lemnCriterias = data;
-// })
-// .then(data => console.log(lemnCriterias))
-
-
 //Fetch firme
 let companies
 fetch("Json/firme.json")
@@ -105,9 +76,7 @@ fetch("Json/firme.json")
 
 
                                 const social = data[0].Criterii.S;
-                                console.log(social)
                                 Object.entries(social).forEach(item => {
-                                    console.log(item)
                                     if (company.Criterii.S.hasOwnProperty(item[0])) {
                                         SdataForChart.push(company.Criterii.S[`${item[0]}`].valoare * item[1].pondere);
                                         nr_pondere += item[1].pondere;
@@ -122,9 +91,7 @@ fetch("Json/firme.json")
                                 nr_pondere = 0;
 
                                 const guvernance = data[0].Criterii.G;
-                                console.log(guvernance)
                                 Object.entries(guvernance).forEach(item => {
-                                    console.log(item)
                                     if (company.Criterii.G.hasOwnProperty(item[0])) {
                                         GdataForChart.push(company.Criterii.G[`${item[0]}`].valoare * item[1].pondere);
                                         nr_pondere += item[1].pondere;
@@ -227,10 +194,6 @@ fetch("Json/firme.json")
 
 
                                 const linReg = linearRegression(inputArray, "ESG", "months");
-
-                                console.log(linReg(7));
-
-
                                     
                                 let data1 = {
                                     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July-Prediction'],
